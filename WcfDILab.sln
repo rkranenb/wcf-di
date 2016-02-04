@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfDILab", "WcfDILab\WcfDILab.csproj", "{79EDB213-F912-44B2-BDFA-EBEC4C9C6847}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{CA6CA87B-6E38-43BD-9CE3-7F48B92EEBB0}"
+	ProjectSection(SolutionItems) = preProject
+		WcfDILab\.nuget\NuGet.Config = WcfDILab\.nuget\NuGet.Config
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		WcfDILab\.nuget\NuGet.exe = WcfDILab\.nuget\NuGet.exe
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		WcfDILab\.nuget\NuGet.targets = WcfDILab\.nuget\NuGet.targets
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79EDB213-F912-44B2-BDFA-EBEC4C9C6847}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79EDB213-F912-44B2-BDFA-EBEC4C9C6847}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79EDB213-F912-44B2-BDFA-EBEC4C9C6847}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79EDB213-F912-44B2-BDFA-EBEC4C9C6847}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
