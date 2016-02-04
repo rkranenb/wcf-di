@@ -10,14 +10,21 @@ namespace WcfDILab {
 		
 		private readonly Type pluginType;
 
+		private static readonly object MutEx = new object();
 		private static IContainer Container;
 		static StructureMapInstanceProvider() {
-			Container = new Container(registry => {
-				registry.Scan(scan => {
-					scan.TheCallingAssembly();
-					scan.WithDefaultConventions();
-				});
-			});
+			if (Container == null) {
+				lock (MutEx) {
+					if (Container == null) {
+						Container = new Container(registry => {
+							registry.Scan(scan => {
+								scan.TheCallingAssembly();
+								scan.WithDefaultConventions();
+							});
+						});
+					}
+				}
+			}
 		}
 
 		public StructureMapInstanceProvider(Type pluginType) {
